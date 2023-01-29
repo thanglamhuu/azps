@@ -1,0 +1,49 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Flutter: Attach to Device",
+            "type": "dart",
+            "request": "attach"
+        },
+
+      {
+        "name": "Windows",
+        "program": "lib/main.dart",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "debug",
+        "args": [
+          "-d",
+          "windows"
+        ]
+      },
+        {"name": "Web",
+        "program": "lib/main.dart",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "debug",
+        "args": [
+          "-d",
+          "chrome"
+        ]
+      },
+      {
+        "name": "Android",
+        "program": "lib/main.dart",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "debug"
+      }
+    ],
+    "compounds": [
+      {
+        "name": "All Devices",
+        "configurations": [
+          "Windows",
+          "Web",
+          "Android"
+        ]
+      }
+    ]
+  }
