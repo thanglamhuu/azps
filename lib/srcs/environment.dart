@@ -1,6 +1,7 @@
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/painting.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
 import 'utils/hex_color.dart';
 
 class Environment {

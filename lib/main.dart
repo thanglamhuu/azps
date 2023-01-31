@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'src/environment.dart';
+import 'srcs/environment.dart';
+import 'srcs/home.dart';
 
 void main() async {
   await dotenv.load(fileName: Environment.fileName);
@@ -28,7 +29,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: AppHome(title: 'Flutter Demo Home Page'),
+      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
@@ -113,6 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
+        backgroundColor: Environment.appColorPrimary,
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
