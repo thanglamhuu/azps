@@ -5,7 +5,7 @@ import 'utils/hex_color.dart';
 
 class Environment {
   static String get fileName =>
-      kReleaseMode ? ".env.production" : ".env.development";
+      kReleaseMode ? "env.production" : "env.development";
   static String get appTitle => dotenv.env['APP_TITLE'] ?? 'MY_FALLBACK';
   static Color get appColorPrimary =>
       HexColor(dotenv.env['APP_COLOR_PRIMARY'] ?? '');
